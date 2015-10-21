@@ -6,3 +6,9 @@
  * and open the template in the editor.
  */
 
+define("WEB_DIR",sprintf("%s".DIRECTORY_SEPARATOR."web",BASE_DIR));
+define("LIB_DIR",sprintf("%s".DIRECTORY_SEPARATOR."lib",BASE_DIR));
+define("TEMPLATE_DIR",sprintf("%s".DIRECTORY_SEPARATOR."template",BASE_DIR));
+
+
+?>

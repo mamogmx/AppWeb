@@ -22,6 +22,7 @@ class appWebPage {
     }
     
     static function renderMessages($mode="",$userName=""){
+        
         $template=<<<EOT
     <li>
         <a href="#">
