@@ -1,0 +1,5 @@
+msgid "hello"
+msgstr "Salve"
+
+msgid "signup"
+msgstr "Registrati Gratis"
