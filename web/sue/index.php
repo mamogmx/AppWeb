@@ -55,7 +55,7 @@ else{
     </head>
     <body class="skin-blue">
         
-        <header class="header">
+        <div class="header">
             <a href="index.html" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
                 AppWeb-1.0
@@ -166,7 +166,7 @@ else{
                     </ul>
                 </div>
             </nav>
-        </header>
+        </div>
         
         
         <div class="wrapper row-offcanvas row-offcanvas-left">
@@ -202,7 +202,7 @@ else{
                                 
                                 <ul class="treeview-menu">
                                     <li class="active">
-                                        <a href="#" data-plugins="loadContent" data-parameters='{}'>
+                                        <a href="#" data-plugins="loadContent" data-parameters='{form='avvio_procedimento',mode='view'}'>
                                             <i class="fa fa-play"></i> <span>Avvio Procedimento</span>
                                         </a>
                                     </li>
@@ -374,7 +374,7 @@ else{
         
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <script src="/js/AdminLTE/dashboard.js" type="text/javascript"></script>    
-        
+        <script src="/js/init.js" type="text/javascript"></script>
         <script src="/js/app.controller.js" type="text/javascript"></script>
     </body>   
 </html>
