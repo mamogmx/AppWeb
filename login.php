@@ -12,5 +12,5 @@ define ("DATA_DIR",$dataDir);
 
 require_once DATA_DIR.DIRECTORY_SEPARATOR.'config.php';
 
-
+require_once LIB_DIR.DIRECTORY_SEPARATOR."utils.class.php";
 ?>

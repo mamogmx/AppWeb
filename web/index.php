@@ -1,6 +1,6 @@
 <?php
 require_once '../login.php';
-print_r($_REQUEST);
+
 $pageInfo = Array(
     "messages"=>Array(),
     "notifications"=>Array(),
@@ -920,8 +920,8 @@ $pageInfo = Array(
         <!-- add new calendar event modal -->
 
 
-        <!-- jQuery 2.0.2 -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- jQuery 2.1.4 -->
+        <script src="/js/jquery-2.1.14.min.js" type="text/javascript"></script>
         <!-- jQuery UI 1.10.3 -->
         <script src="/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
