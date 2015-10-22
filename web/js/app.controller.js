@@ -9,6 +9,7 @@ $(document).ready(function(){
     $('a[data-plugins="loadContent"]').bind('click',function(e){
         var self = this;
         e.preventDefault();
+        $(self).parent().addClass("active");
         var d = $(self).data();
         var params = d["parameters"];
     });

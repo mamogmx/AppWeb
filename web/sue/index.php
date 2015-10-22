@@ -195,13 +195,19 @@ else{
                     <!-- /.search form -->
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu">
-                        <li class="treeview">
+                        <li class="treeview active">
                             <a href="#" data-plugins="loadContent">
                                 <i class="fa fa-dashboard"></i> <span>Procedimento</span>
                                 <i class="fa fa-angle-left pull-right"></i>
+                                
                                 <ul class="treeview-menu">
+                                    <li class="active">
+                                        <a href="#" data-plugins="loadContent" data-parameters='{}'>
+                                            <i class="fa fa-play"></i> <span>Avvio Procedimento</span>
+                                        </a>
+                                    </li>
                                     <li>
-                                        <a href="pages/widgets.html">
+                                        <a href="#" data-plugins="loadContent" data-parameters='{}'>
                                             <i class="fa fa-link"></i> <span>Pratiche Collegate</span>
                                         </a>
                                     </li>
@@ -232,9 +238,10 @@ else{
                                         </ul>
                                     </li>
                                     
-                                    <li><a href="pages/UI/icons.html"><i class="fa fa-file"></i> Allegati</a></li>
-                                    <li><a href="pages/UI/icons.html"><i class="fa fa-send"></i> Integrazioni</a></li>
-                                    <li><a href="pages/UI/icons.html"><i class="fa fa-hourglass"></i> Sospensioni</a></li>
+                                    <li><a href="#" data-plugins="loadContent" data-parameters='{}'><i class="fa fa-file"></i> Allegati</a></li>
+                                    <li><a href="#" data-plugins="loadContent" data-parameters='{}'><i class="fa fa-send"></i> Integrazioni</a></li>
+                                    <li><a href="#" data-plugins="loadContent" data-parameters='{}'><i class="fa fa-hourglass"></i> Sospensioni</a></li>
+                                    <li><a href="#" data-plugins="loadContent" data-parameters='{}'><i class="fa fa-stop"></i> Conclusione Procedimento</a></li>
                                 </ul>
                             </a>
                         </li>
