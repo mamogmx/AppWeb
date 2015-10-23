@@ -321,20 +321,7 @@ else{
 
                 <!-- Main content -->
                 <section class="content">
-
-                    <!-- Small boxes (Stat box) -->
-                    <div class="row">
-
-                    </div><!-- /.row -->
-
-                    <!-- top row -->
-                    <div class="row">
-
-
-                        </div><!-- /.col -->
-                    </div>
-                    <!-- /.row -->
-
+                    
                     <!-- Main row -->
                     <div id = "main-content" class="row">
                         
@@ -350,6 +337,7 @@ else{
         <script src="/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
         <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/js/bootstrap.datepicker.js" type="text/javascript"></script>
         <!-- Morris.js charts -->
 
         <!--<script src="/js/plugins/morris/morris.min.js" type="text/javascript"></script>-->

@@ -17,5 +17,6 @@ $(document).ready(function(){
         $(self).parent().addClass("active");
         var d = $(self).data();
         AppWeb.loadContent(d);
+        
     });
 });

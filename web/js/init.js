@@ -7,9 +7,12 @@
 ;(function($) {
     
     AppWeb.serverURL = "/services/xServer.php";
-    
+    AppWeb.initializeControls = function(){
+        $(".datepicker").datepicker();
+        console.log($("input.datepicker"));
+    };
     AppWeb.loadContent = function(obj){
-        if(typeof(obj["form"])!="undefined"){
+        if(typeof(obj["form"])!=="undefined"){
             $.ajax({
                 url : AppWeb.serverURL,
                 data : obj,
@@ -26,9 +29,10 @@
                             );
                         }
                     }
+                    AppWeb.initializeControls();
                 }
             });
         }
     };
- 
+    
 })(jQuery);
