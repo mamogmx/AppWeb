@@ -1,4 +1,6 @@
 /**
  * 
  */
-console.log("soggetti");
+$(document).ready(function(){
+    console.log("soggetti");
+});

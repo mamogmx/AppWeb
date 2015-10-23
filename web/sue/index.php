@@ -1,12 +1,12 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 require_once '../../login.php';
+
 $conn = new PDO(DSN,DB_USER,DB_PWD);
 extract($_REQUEST);
 $sql = utils::dsprintf("SELECT data FROM sue.%(form)s WHERE pratica=?",$_REQUEST);
@@ -54,7 +54,7 @@ else{
         </script>
     </head>
     <body class="skin-blue">
-        
+
         <div class="header">
             <a href="index.html" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
@@ -87,9 +87,9 @@ else{
                                     <!-- inner menu: contains the actual data -->
                                     <ul class="menu">
                                         <li><!-- start message -->
-                                            
+
                                         </li><!-- end message -->
-                                        
+
                                     </ul>
                                 </li>
                                 <li class="footer"><a href="#">See All Messages</a></li>
@@ -107,7 +107,7 @@ else{
                                     <!-- inner menu: contains the actual data -->
                                     <ul class="menu">
                                         <li>
-                                            
+
                                         </li>
                                     </ul>
                                 </li>
@@ -126,10 +126,10 @@ else{
                                     <!-- inner menu: contains the actual data -->
                                     <ul class="menu">
                                         <li><!-- Task item -->
-                                            
+
                                             </a>
                                         </li><!-- end task item -->
-                                        
+
                                     </ul>
                                 </li>
                                 <li class="footer">
@@ -146,11 +146,11 @@ else{
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    
+
                                 </li>
                                 <!-- Menu Body -->
                                 <li class="user-body">
-                                    
+
                                 </li>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
@@ -167,8 +167,8 @@ else{
                 </div>
             </nav>
         </div>
-        
-        
+
+
         <div class="wrapper row-offcanvas row-offcanvas-left">
             <!-- Left side column. contains the logo and sidebar -->
             <aside class="left-side sidebar-offcanvas">
@@ -199,45 +199,45 @@ else{
                             <a href="#" data-plugins="loadContent">
                                 <i class="fa fa-dashboard"></i> <span>Procedimento</span>
                                 <i class="fa fa-angle-left pull-right"></i>
-                                
+
                                 <ul class="treeview-menu">
                                     <li class="active">
-                                        <a href="#" data-plugins="loadContent" data-parameters='{form='avvio_procedimento',mode='view'}'>
+                                        <a href="#" data-plugins="loadContent" data-form="avvio_procedimento" data-mode="view">
                                             <i class="fa fa-play"></i> <span>Avvio Procedimento</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" data-plugins="loadContent" data-parameters='{}'>
+                                        <a href="#" data-plugins="loadContent" data-form="riferimenti" data-mode="view">
                                             <i class="fa fa-link"></i> <span>Pratiche Collegate</span>
                                         </a>
                                     </li>
                                     <li class="treeview">
-                                        <a href="#" data-plugins="loadContent" data-parameters='{"form":"soggetti", "mode":"list"}'>
+                                        <a href="#" data-plugins="loadContent">
                                             <i class="fa fa-male"></i>
                                             <span>Soggetti</span>
                                             <i class="fa fa-angle-left pull-right"></i>
                                         </a>
                                         <ul class="treeview-menu">
-                                            <li><a href="#" data-plugins="loadContent" data-parameters="{form='',mode=''}"><i class="fa fa-angle-double-right"></i> Richiedenti</a></li>
-                                            <li><a href="#" data-plugins="loadContent" data-parameters="{}"><i class="fa fa-angle-double-right"></i> Professionisti</a></li>
-                                            <li><a href="#" data-plugins="loadContent" data-parameters="{}"><i class="fa fa-angle-double-right"></i> Esecutori</a></li>
-                                            <li><a href="#" data-plugins="loadContent" data-parameters="{}"><i class="fa fa-angle-double-right"></i> Altre Tipologie</a></li>
+                                            <li><a href="#" data-plugins="loadContent" data-form="soggetti" data-mode="list" data-subjecttype=""><i class="fa fa-angle-double-right"></i> Richiedenti</a></li>
+                                            <li><a href="#" data-plugins="loadContent" data-form="soggetti" data-mode="list" data-subjecttype=""><i class="fa fa-angle-double-right"></i> Professionisti</a></li>
+                                            <li><a href="#" data-plugins="loadContent" data-form="soggetti" data-mode="list" data-subjecttype=""><i class="fa fa-angle-double-right"></i> Esecutori</a></li>
+                                            <li><a href="#" data-plugins="loadContent" data-form="soggetti" data-mode="list" data-subjecttype=""><i class="fa fa-angle-double-right"></i> Altre Tipologie</a></li>
                                         </ul>
                                     </li>
                                     <li class="treeview">
-                                        <a href="#" data-plugins="loadContent" data-parameters="{}">
-                                            <i class="fa fa-location-arrow"></i> 
+                                        <a href="#" data-plugins="loadContent">
+                                            <i class="fa fa-location-arrow"></i>
                                             <span>Ubicazione</span>
                                             <i class="fa fa-angle-left pull-right"></i>
                                         </a>
                                         <ul class="treeview-menu">
-                                            <li><a href="#" data-plugins="loadContent" data-parameters="{}"><i class="fa fa-angle-double-right"></i> Indirizzi</a></li>
-                                            <li><a href="#" data-plugins="loadContent" data-parameters="{}"><i class="fa fa-angle-double-right"></i> Catasto Terreni</a></li>
-                                            <li><a href="#" data-plugins="loadContent" data-parameters="{}"><i class="fa fa-angle-double-right"></i> Catasto Urbano</a></li>
-                                            <li><a href="#" data-plugins="loadContent" data-parameters="{}"><i class="fa fa-angle-double-right"></i> Mappa</a></li>
+                                            <li><a href="#" data-plugins="loadContent" data-form="indirizzi" data-mode="list"><i class="fa fa-angle-double-right"></i> Indirizzi</a></li>
+                                            <li><a href="#" data-plugins="loadContent" data-form="catasto_terreni" data-mode="list"><i class="fa fa-angle-double-right"></i> Catasto Terreni</a></li>
+                                            <li><a href="#" data-plugins="loadContent" data-form="catasto_urbano" data-mode="list"><i class="fa fa-angle-double-right"></i> Catasto Urbano</a></li>
+                                            <li><a href="#" data-plugins="loadContent" data-form="mappa" data-mode="list"><i class="fa fa-angle-double-right"></i> Mappa</a></li>
                                         </ul>
                                     </li>
-                                    
+
                                     <li><a href="#" data-plugins="loadContent" data-parameters='{}'><i class="fa fa-file"></i> Allegati</a></li>
                                     <li><a href="#" data-plugins="loadContent" data-parameters='{}'><i class="fa fa-send"></i> Integrazioni</a></li>
                                     <li><a href="#" data-plugins="loadContent" data-parameters='{}'><i class="fa fa-hourglass"></i> Sospensioni</a></li>
@@ -245,8 +245,8 @@ else{
                                 </ul>
                             </a>
                         </li>
-                        
-                        
+
+
                         <li class="treeview">
                             <a href="#" data-plugins="loadContent">
                                 <i class="fa fa-laptop"></i>
@@ -256,8 +256,8 @@ else{
                             <ul class="treeview-menu">
                                 <li><a href="pages/UI/general.html"><i class="fa fa-angle-double-right"></i> Dati di Progetto</a></li>
                                 <li><a href="pages/UI/buttons.html"><i class="fa fa-angle-double-right"></i> Relazione Tecnica</a></li>
-                                
-                                
+
+
                             </ul>
                         </li>
                         <li class="treeview">
@@ -292,14 +292,14 @@ else{
                                 <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Proroghe</a></li>
                             </ul>
                         </li>
-                        
+
                         <li>
                             <a href="pages/mailbox.html">
                                 <i class="fa fa-eye"></i> <span>Sopralluoghi</span>
-                                
+
                             </a>
                         </li>
-                        
+
                     </ul>
                 </section>
                 <!-- /.sidebar -->
@@ -329,14 +329,14 @@ else{
 
                     <!-- top row -->
                     <div class="row">
-                        
-                            
+
+
                         </div><!-- /.col -->
                     </div>
                     <!-- /.row -->
 
                     <!-- Main row -->
-                    <div class="row">
+                    <div id = "main-content" class="row">
                         
                     </div><!-- /.row (main row) -->
 
@@ -344,7 +344,7 @@ else{
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
 
-        
+
         <script src="/js/jquery-2.1.4.min.js" type="text/javascript"></script>
         <!-- jQuery UI 1.10.3 -->
         <script src="/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
@@ -371,10 +371,10 @@ else{
 
         <!-- AdminLTE App -->
         <script src="/js/AdminLTE/app.js" type="text/javascript"></script>
-        
+
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <script src="/js/AdminLTE/dashboard.js" type="text/javascript"></script>    
+        <script src="/js/AdminLTE/dashboard.js" type="text/javascript"></script>
         <script src="/js/init.js" type="text/javascript"></script>
         <script src="/js/app.controller.js" type="text/javascript"></script>
-    </body>   
+    </body>
 </html>

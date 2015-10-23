@@ -10,12 +10,12 @@ $(document).ready(function(){
         
     	var self = this;
         e.preventDefault();
+        $(".sidebar-menu .active").removeClass("active");
+        $.each($(self).parentsUntil(".sidebar-menu"),function(k,v){
+            if($(v).is("li")) $(v).addClass("active");
+        });
         $(self).parent().addClass("active");
         var d = $(self).data();
-        var params = d["parameters"];
-        AppWeb.loadContent();
-        /*$.ajax({
-        	data:d["parameters"],
-        });*/
+        AppWeb.loadContent(d);
     });
 });

@@ -5,8 +5,30 @@
  */
 ;var AppWeb = {};
 ;(function($) {
-    AppWeb.loadContent = function(){
-    	console.log('running AppWeb.loadContent Function ...');
-    }
+    
+    AppWeb.serverURL = "/services/xServer.php";
+    
+    AppWeb.loadContent = function(obj){
+        if(typeof(obj["form"])!="undefined"){
+            $.ajax({
+                url : AppWeb.serverURL,
+                data : obj,
+                method : 'POST',
+                success : function(data){
+                    $("#main-content").html(data["html"]);
+                    if (data["js"].length){
+                        for(i=0;i<data['js'].length;i++){
+                            var js = data["js"][i];
+                            $.getScript(js).fail(
+                                function( jqxhr, settings, exception ) {
+                                    console.log( "Triggered ajaxError handler on " + js );
+                                }
+                            );
+                        }
+                    }
+                }
+            });
+        }
+    };
  
 })(jQuery);
