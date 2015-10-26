@@ -6,6 +6,8 @@
 
 
 $(document).ready(function(){
+    console.log(AppWeb);
+
     $('a[data-plugins="loadContent"]').bind('click',function(e){
         
     	var self = this;

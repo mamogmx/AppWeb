@@ -5,21 +5,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+require_once '../../login.php';
 
-$html = <<<EOT
-    <p>Ciao Questa pagina è %s.</p>
-    <input id="data" class="datepicker" data-date-format="mm/dd/yyyy">
-EOT;
-$html = sprintf($html,$_REQUEST["form"]);
+if (!file_exists(LIB_DIR.DIRECTORY_SEPARATOR.'server.class.php'))
+    die(LIB_DIR.DIRECTORY_SEPARATOR.'server.class.php');
 
-$result=Array(
-    "success" => 0,
-    "message" => Array(),
-    "js" => Array("./js/controller.avvio_procedimento.js","./js/controller.soggetti.js"),
-    "data" => Array(),
-    "html" => $html
-);
+require_once LIB_DIR.DIRECTORY_SEPARATOR.'server.class.php';
 
-header("Content-Type: application/json;charset=utf-8");
-print json_encode($result);
+appServer::runServer($_REQUEST);
 ?>

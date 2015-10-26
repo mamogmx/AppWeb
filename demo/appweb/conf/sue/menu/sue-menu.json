@@ -1,0 +1,310 @@
+{
+  "sue": [
+    {
+      "label":"Procedimento",
+      "class":"",
+      "icon-pre":"dashboard",
+      "icon-post":"angle-left",
+      "htm5-attribute":{
+        "plugin":""
+      },
+      "children":[
+        {
+          "label":"Avvio Procedimento",
+          "class":"",
+          "icon-pre":"play",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin": "loadContent",
+            "mode": "view",
+            "form": "avvio_procedimento"
+          },
+          "children":[]
+        },
+        {
+          "label":"Pratiche Collegate",
+          "class":"",
+          "icon-pre":"link",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":"loadContent",
+            "mode": "view",
+            "form": "riferimenti"
+          },
+          "children":[]
+        },
+        {
+          "label":"Soggetti",
+          "class":"",
+          "icon-pre":"male",
+          "icon-post":"angle-left",
+          "htm5-attribute":{
+            "plugin":""
+          },
+          "children":[
+            {
+              "label":"Richiedenti",
+              "class":"",
+              "icon-pre":"angle-double-right",
+              "icon-post":"angle-left",
+              "htm5-attribute":{
+                "plugin":"loadMenu",
+                "menu-type": "soggetti",
+                "menu-params": "richiedenti"
+              },
+              "children":[]
+            }, 
+            {
+              "label":"Progettisti",
+              "class":"",
+              "icon-pre":"angle-double-right",
+              "icon-post":"angle-left",
+              "htm5-attribute":{
+                "plugin":"loadMenu",
+                "menu-type": "soggetti",
+                "menu-params": "progettisti"
+              },
+              "children":[]
+            },
+            {
+              "label":"Esecutori",
+              "class":"",
+              "icon-pre":"angle-double-right",
+              "icon-post":"angle-left",
+              "htm5-attribute":{
+                "plugin":"loadMenu",
+                "menu-type": "soggetti",
+                "menu-params": "esecutori"
+              },
+              "children":[]
+            },
+            {
+              "label":"Altri Soggetti",
+              "class":"",
+              "icon-pre":"angle-double-right",
+              "icon-post":"angle-left",
+              "htm5-attribute":{
+                "plugin":"loadMenu",
+                "menu-type": "soggetti",
+                "menu-params": "altri"
+              },
+              "children":[]
+            },
+            {
+              "label":"Nuovo Soggetto",
+              "class":"",
+              "icon-pre":"angle-double-right",
+              "icon-post":"",
+              "htm5-attribute":{
+                "plugin":"loadContent",
+                "mode": "new",
+                "form": "soggetto"
+              },
+              "children":[]
+            }
+          ]
+        },
+        {
+          "label":"Ubicazione",
+          "class":"",
+          "icon-pre":"location-arrow",
+          "icon-post":"angle-left",
+          "htm5-attribute":{
+            "plugin":""
+          },
+          "children":[
+            {
+              "label":"Indirizzi",
+              "class":"",
+              "icon-pre":"angle-double-right",
+              "icon-post":"",
+              "htm5-attribute":{
+                "plugin":"loadContent",
+                "mode": "view",
+                "form": "indirizzi"
+              },
+              "children":[]
+            },
+            {
+              "label":"Catasto Terreni",
+              "class":"",
+              "icon-pre":"angle-double-right",
+              "icon-post":"",
+              "htm5-attribute":{
+                "plugin":"loadContent",
+                "mode": "view",
+                "form": "cterreni"
+              },
+              "children":[]
+            },
+            {
+              "label":"Catasto Urbano",
+              "class":"",
+              "icon-pre":"angle-double-right",
+              "icon-post":"",
+              "htm5-attribute":{
+                "plugin":"loadContent",
+                "mode": "view",
+                "form": "curbano"
+              },
+              "children":[]
+            },
+            {
+              "label":"Localizzazione",
+              "class":"",
+              "icon-pre":"angle-double-right",
+              "icon-post":"",
+              "htm5-attribute":{
+                "plugin":"loadContent",
+                "mode": "view",
+                "form": "mappa"
+              },
+              "children":[]
+            }
+          ]
+        },
+                {
+          "label":"Allegati",
+          "class":"",
+          "icon-pre":"file",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":"loadContent",
+            "form": "allegati",
+            "mode": "view"
+          },
+          "children":[]
+        },
+        {
+          "label":"Sospensioni",
+          "class":"",
+          "icon-pre":"hourglass",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":"loadContent",
+            "mode": "view",
+            "form": "sospensioni"
+          },
+          "children":[]
+        },
+        {
+          "label":"Integrazioni",
+          "class":"",
+          "icon-pre":"send",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":"loadContent",
+            "mode": "view",
+            "form": "integrazioni"
+          },
+          "children":[]
+        },
+        {
+          "label":"Conclusione Procedimento",
+          "class":"",
+          "icon-pre":"stop",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":"loadContent",
+            "mode": "view",
+            "form": "chiusura_procedimento"
+          },
+          "children":[]
+        }
+      ]
+    },
+    {
+      "label":"Istr. Tecnica",
+      "class":"",
+      "icon-pre":"",
+      "icon-post":"",
+      "htm5-attribute":{
+        "plugin":""
+      },
+      "children":[
+        {
+          "label":"Dati di Progetto",
+          "class":"",
+          "icon-pre":"",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":""
+          },
+          "children":[]
+        },
+        {
+          "label":"Relazione Tecnica",
+          "class":"",
+          "icon-pre":"",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":""
+          },
+          "children":[]
+        }
+      ]
+    },
+    {
+      "label":"Istr. Amministrativa",
+      "class":"",
+      "icon-pre":"",
+      "icon-post":"",
+      "htm5-attribute":{
+        "plugin":""
+      },
+      "children":[
+        {
+          "label":"Pareri Uffici Interni",
+          "class":"",
+          "icon-pre":"",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":""
+          },
+          "children":[]
+        },
+        {
+          "label":"Pareri Enti Esterni",
+          "class":"",
+          "icon-pre":"",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":""
+          },
+          "children":[]
+        }
+      ]
+    },
+    {
+      "label":"Titolo",
+      "class":"",
+      "icon-pre":"",
+      "icon-post":"",
+      "htm5-attribute":{
+        "plugin":""
+      },
+      "children":[
+        {
+          "label":"Dati di Progetto",
+          "class":"",
+          "icon-pre":"",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":""
+          },
+          "children":[]
+        },
+        {
+          "label":"Relazione Tecnica",
+          "class":"",
+          "icon-pre":"",
+          "icon-post":"",
+          "htm5-attribute":{
+            "plugin":""
+          },
+          "children":[]
+        }
+      ]
+    }
+  ]
+}

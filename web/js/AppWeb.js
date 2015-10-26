@@ -5,11 +5,25 @@
  */
 ;var AppWeb = {};
 ;(function($) {
-    
+    AppWeb.controlsType = [];
     AppWeb.serverURL = "/services/xServer.php";
+    AppWeb.suggestURL = "/services/xSuggest.php";
+    
+    AppWeb.initialize = function(){
+        $.ajax({
+            url:AppWeb.serverURL,
+            method: 'POST',
+            data: {action:'initialize'},
+            success:function(data, textStatus, jqXHR){
+                
+            },
+            error:function(jqXHR, textStatus, errorThrown){
+                
+            }
+        });
+    };
     AppWeb.initializeControls = function(){
         $(".datepicker").datepicker();
-        console.log($("input.datepicker"));
     };
     AppWeb.loadContent = function(obj){
         if(typeof(obj["form"])!=="undefined"){
@@ -17,7 +31,7 @@
                 url : AppWeb.serverURL,
                 data : obj,
                 method : 'POST',
-                success : function(data){
+                success : function(data, textStatus, jqXHR){
                     $("#main-content").html(data["html"]);
                     if (data["js"].length){
                         for(i=0;i<data['js'].length;i++){
@@ -30,9 +44,15 @@
                         }
                     }
                     AppWeb.initializeControls();
+                },
+                error:function(jqXHR, textStatus, errorThrown){
+
                 }
             });
         }
     };
-    
+    AppWeb.loadMenu = function(obj){
+        console.log("Loading Menu .... ");
+            
+    };
 })(jQuery);

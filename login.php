@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+error_reporting(E_ERROR);
 define("BASE_DIR",sprintf("%s".DIRECTORY_SEPARATOR,dirname(__FILE__)));
 
 

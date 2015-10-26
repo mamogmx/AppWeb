@@ -362,7 +362,8 @@ else{
 
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <script src="/js/AdminLTE/dashboard.js" type="text/javascript"></script>
-        <script src="/js/init.js" type="text/javascript"></script>
+        <script src="/js/AppWeb.js" type="text/javascript"></script>
+        <script src="/sue/js/SueWeb.js" type="text/javascript"></script>
         <script src="/js/app.controller.js" type="text/javascript"></script>
     </body>
 </html>
