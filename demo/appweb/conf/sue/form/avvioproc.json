@@ -1,0 +1,147 @@
+{
+  "general":{
+    
+  },
+  "edit": {
+    "section":[
+      {
+        "title": "",
+        "source": "",
+        "rows": [
+          
+        ]
+      } 
+    ]
+  },
+  "view": {
+    "section":[
+      {
+        "title": "__table_pe.procedimento_view__",
+        "source": "",
+        "rows": [
+          {
+            "cells":[
+              {
+                "label":"____",
+                "controls": [
+                  {
+                    "type": "",
+                    "id": "",
+                    "name":"",
+                    "class": ["",""],
+                    "html5-attributes": {
+                      
+                    },
+                    "style":{
+                      
+                    }
+                  }
+                ]
+              },
+              {
+                "controls": [
+                  {
+                    "template": "input",
+                    "type": "",
+                    "id": "",
+                    "name":"",
+                    "class": ["",""],
+                    "html5-attributes": {
+                      
+                    },
+                    "style":{
+                      
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells":[
+              {
+                "controls": [
+                  {
+                    "type": "",
+                    "id": "",
+                    "name":"",
+                    "class": ["",""],
+                    "html5-attributes": {
+                      
+                    },
+                    "style":{
+                      
+                    }
+                  }
+                ]
+              },
+              {
+                "controls": [
+                  {
+                    "type": "",
+                    "id": "",
+                    "name":"",
+                    "class": ["",""],
+                    "html5-attributes": {
+                      
+                    },
+                    "style":{
+                      
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cells":[
+              {
+                "controls": [
+                  {
+                    "type": "",
+                    "id": "",
+                    "name":"",
+                    "class": ["",""],
+                    "html5-attributes": {
+                      
+                    },
+                    "style":{
+                      
+                    }
+                  }
+                ]
+              },
+              {
+                "controls": [
+                  {
+                    "type": "",
+                    "id": "",
+                    "name":"",
+                    "class": ["",""],
+                    "html5-attributes": {
+                      
+                    },
+                    "style":{
+                      
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      } 
+    ]
+  },
+  "list": {
+    "section":[
+      {
+        "title": "",
+        "source": "",
+        "rows": [
+          
+        ]
+      } 
+    ]
+  }
+}

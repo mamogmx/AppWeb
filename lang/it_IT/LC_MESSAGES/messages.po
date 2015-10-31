@@ -1,5 +1,5 @@
-msgid "hello"
+msgid "table_pe.procedimento_view"
 msgstr "Salve"
 
-msgid "signup"
+msgid "table_pe.procedimento_edit"
 msgstr "Registrati Gratis"

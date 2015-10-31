@@ -13,7 +13,13 @@
  * @email marco.carbone@gmx.com
  */
 class appWebForm {
+    
+    static function prepareConf($conf){
+        
+    }
     static function writeControl($conf,$data){
+        $html = self::loadTemplate($conf["template"], $app);
+        $html = utils::dsprintf($html,$conf);
         
     }
     static function writeCell($conf,$data){

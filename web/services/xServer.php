@@ -7,8 +7,9 @@
  */
 require_once '../../login.php';
 
-if (!file_exists(LIB_DIR.DIRECTORY_SEPARATOR.'server.class.php'))
+if (!file_exists(LIB_DIR.DIRECTORY_SEPARATOR.'server.class.php')){
     die(LIB_DIR.DIRECTORY_SEPARATOR.'server.class.php');
+}
 
 require_once LIB_DIR.DIRECTORY_SEPARATOR.'server.class.php';
 
